@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Processing Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1> Introduction on Transaction Processing</h1>
+        <p>  MyBlog</p>
+    </header>
+
+    <section class="content">
+        <article class="post">
+            <h2 class="fade-in">What is Transaction Processing?</h2>
+            <p>Transaction processing refers to the execution of database transactions in a secure and reliable manner..
+                Introduction to Transaction Processing Concepts and Theory Chapter 17 ICS 424 Advanced Database Systems Dr. Muhammad Shafique Transaction Processing Concepts and Theory
+
+Outline • Introduction to transaction processing • Transaction and system concepts • Desirable properties of transactions • Schedules and recoverability • Schedules and Serializability • Transaction support in SQL • Summary Transaction Processing Concepts and Theory
+
+Introduction to Transaction Processing • Single-user VS multi-user systems • A DBMS is single-user if at most one user can use the system at a time • A DBMS is multi-user if many users can use the system concurrently • Problem How to make the simultaneous interactions of multiple users with the database safe, consistent, correct, and efficient? Transaction Processing Concepts and Theory
+
+Introduction to Transaction Processing • Computing systems • Single-processor computer system • Multiprogramming • Inter-leaved Execution • Multi-processor computer system • Parallel processing Transaction Processing Concepts and Theory
+
+Concurrent Transactions B B B CPU2 A A CPU1 A CPU1 time t1 t2 t1 t2 Interleaved processing (Single processor) Parallel processing (Two or more processors) Transaction Processing Concepts and Theory.</p>
+            <a href="https://www.slideserve.com/bernad/transaction-processing-concepts">more about</a>
+        </article>
+
+        <article class="post">
+            <h2 class="fade-in">Types of Transactions</h2>
+            <ul>
+                <li><b>Batch Processing</b> - Transactions are processed in bulk.</li>
+                <li><b>Real-time Processing</b> - Transactions are processed instantly.</li>
+                <li><b> Based on User Involvemen </b>- Only one user can interact with the database at a time.<br></li>
+                    <li>   <b> Based on Data Operation</b> - Designed for complex queries and data analysis<br></li>
+                        <li><b> Based on Application</b> - Used in various applications, like MySQL and PostgreSQL.<br></li>
+                    
+            </ul>
+            <center> <img src="https://i.pinimg.com/736x/5d/5e/1a/5d5e1ab82563a5223ae7c4e82edb8aad.jpg"width=300> </center>
+        </article>
+
+        <article class="post">
+            <h2 class="fade-in">ACID Properties</h2>
+            <p><li><b></b>Transactions follow the ACID properties</b>: Atomicity, Consistency, Isolation, and Durability.</p><br>
+            <p><li><b></b>Atomicity</b> – Ensures that a transaction is treated as a single unit, meaning it either completes fully or not at all. If any part fails, the entire transaction is rolled back.<br>
+
+                <li><b></b> Consistency</b> – Guarantees that the database transitions from one valid state to another. Any transaction must follow defined constraints, ensuring data integrity.<br>
+                
+                    <li><b ></b>  Isolation </b>– Ensures that transactions are executed independently, preventing interference. Even if multiple transactions run concurrently, their results should be as if they were executed sequentially.<br>
+                
+                        <li><b></b> Durability</b> – Once a transaction is committed, its changes are permanently saved, even in the event of system failures.<br></p>
+                            
+                            <center> <img src="https://i.pinimg.com/736x/49/47/70/4947702f7db8392c0f76e75e9ad7080c.jpg"width=300><br></center>
+              <center>  <a href="https://www.geeksforgeeks.org/transaction-in-dbms/">click here to know more about Transactions process</a></center>
+        </article>
+<article class="post">
+    <h2 class="fade-in">Conclusion</h2>
+    <p><li><b>"Thank you for exploring the foundations of transaction processing with me. From understanding the ACID properties to appreciating the importance of reliable database operations,<br> I hope this blog provided you with clarity and sparked curiosity.<br>
+        But this is just the beginning. In my next blog, we’ll dive deeper into Schedules Based on Serializability—an essential concept for ensuring that concurrent transactions maintain database integrity.<br>< We’ll explore how serializability works, types of schedules, and real-world examples that bring this idea to life.<br>
+        Now, I’d love to hear from you! Which part of this blog resonated most with you? Are there specific aspects of transaction processing you'd like to understand better? Share your thoughts and suggestions in the comments below—I’m here to learn and grow with you!"</b></li></p>
+
+</article>
+    </section>
+
+    <footer>
+        <p>© 2025 Transaction Processing Blog</p>
+    </footer>
+
+</body>
+</html>
